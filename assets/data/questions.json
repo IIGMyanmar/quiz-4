@@ -1,52 +1,27 @@
 [
   { 
-    "question": "There is no way that I can agree to you __________ early today. ", 
-    "answers": ["submitting", "renouncing", "leaving", "departing"], 
-    "correctAnswer": "leaving"
+    "question": "A single 'piece' of snow is called:", 
+    "answers": ["an icicle", "slush", "a skyrim", "a snowflake"], 
+    "correctAnswer": "a snowflake"
   },
   {
-    "question": "I must object and make it clear that I am totally __________ any measures that suggest changes to the original scheme.",
-    "answers": ["up", "without", "against", "off"],
-    "correctAnswer": "against"
+    "question": "Be careful, Jon! The sidewalk is icy today. It's very __________, so be careful not to fall.",
+    "answers": ["slippery", "stinky", "snobby", "somethingy"],
+    "correctAnswer": "slippery"
   },
   {
-    "question": "He has the __________ of always rejecting any idea that will change the current arrangements.", 
-    "answers": ["habit", "custom", "task", "job"], 
-    "correctAnswer": "habit" 
+    "question": "It's not that cold, Emma. It's just a little bit __________.", 
+    "answers": ["cold", "stupid", "freezing", "chilly"], 
+    "correctAnswer": "chilly" 
   },
   {
-    "question": "I cannot condone that sort of __________ in my establishment and would ask you to remember that in future.", 
-    "answers": ["routine", "manners", "going", "behaviour"], 
-    "correctAnswer": "behaviour" 
+    "question": "I was waiting for the bus in the freezing cold, and then a truck drove by very fast and I got covered in __________.", 
+    "answers": ["snow", "icicles", "slush", "snowflakes"], 
+    "correctAnswer": "slush" 
   },
   {
-    "question": "I have no choice really but to turn __________ your recent proposal because it is completely unworkable.", 
-    "answers": ["off", "over", "down", "across"], 
-    "correctAnswer": "down" 
-  },
-  {
-    "question": "They can't possibly go __________ with your suggestions because it will involve too much expenditure.", 
-    "answers": ["over", "along", "in", "above"], 
-    "correctAnswer": "along" 
-  },
-  {
-    "question": "Quite honestly I'd have to be out of my __________ to sanction what is a crazy proposition.", 
-    "answers": ["sense", "balance", "thought", "mind"], 
-    "correctAnswer": "mind" 
-  },
-  {
-    "question": "When her father discovered that his daughter wanted to marry a pop singer, he decided to put every __________ in their way to prevent the marriage.", 
-    "answers": ["obstacle", "burden", "impediment", "problem"], 
-    "correctAnswer": "obstacle" 
-  },
-  {
-    "question": "He told me there was definitely no __________ that I would pass my examination until I did some work.", 
-    "answers": ["occasion", "chance", "opportunity", "time"], 
-    "correctAnswer": "chance" 
-  },
-  {
-    "question": "You could tell by the _________ he refused to smile that he didn't like the story. ", 
-    "answers": ["method", "plan", "way", "path"], 
-    "correctAnswer": "way" 
+    "question": "The city is so ugly when it is filled with so much ___________.", 
+    "answers": ["slush", "slushes", "trash", "trashes"], 
+    "correctAnswer": "slush" 
   }
 ]
