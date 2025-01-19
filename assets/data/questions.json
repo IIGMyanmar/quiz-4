@@ -1,0 +1,52 @@
+[
+  { 
+    "question": "There is no way that I can agree to you __________ early today. ", 
+    "answers": ["submitting", "renouncing", "leaving", "departing"], 
+    "correctAnswer": "leaving"
+  },
+  {
+    "question": "I must object and make it clear that I am totally __________ any measures that suggest changes to the original scheme.",
+    "answers": ["up", "without", "against", "off"],
+    "correctAnswer": "against"
+  },
+  {
+    "question": "He has the __________ of always rejecting any idea that will change the current arrangements.", 
+    "answers": ["habit", "custom", "task", "job"], 
+    "correctAnswer": "habit" 
+  },
+  {
+    "question": "I cannot condone that sort of __________ in my establishment and would ask you to remember that in future.", 
+    "answers": ["routine", "manners", "going", "behaviour"], 
+    "correctAnswer": "behaviour" 
+  },
+  {
+    "question": "I have no choice really but to turn __________ your recent proposal because it is completely unworkable.", 
+    "answers": ["off", "over", "down", "across"], 
+    "correctAnswer": "down" 
+  },
+  {
+    "question": "They can't possibly go __________ with your suggestions because it will involve too much expenditure.", 
+    "answers": ["over", "along", "in", "above"], 
+    "correctAnswer": "along" 
+  },
+  {
+    "question": "Quite honestly I'd have to be out of my __________ to sanction what is a crazy proposition.", 
+    "answers": ["sense", "balance", "thought", "mind"], 
+    "correctAnswer": "mind" 
+  },
+  {
+    "question": "When her father discovered that his daughter wanted to marry a pop singer, he decided to put every __________ in their way to prevent the marriage.", 
+    "answers": ["obstacle", "burden", "impediment", "problem"], 
+    "correctAnswer": "obstacle" 
+  },
+  {
+    "question": "He told me there was definitely no __________ that I would pass my examination until I did some work.", 
+    "answers": ["occasion", "chance", "opportunity", "time"], 
+    "correctAnswer": "chance" 
+  },
+  {
+    "question": "You could tell by the _________ he refused to smile that he didn't like the story. ", 
+    "answers": ["method", "plan", "way", "path"], 
+    "correctAnswer": "way" 
+  }
+]

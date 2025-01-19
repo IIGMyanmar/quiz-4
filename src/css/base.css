@@ -1,0 +1,250 @@
+@import url(fonts.css);
+
+html {
+  --body-teen-background-fallback: #FBC8D4;
+  --body-teen-background-deg: 360deg;
+  --body-teen-background-gradient-1: #9795F0;
+  /*--body-teen-background-gradient-1: #222222;*/ /*Use this when debuging*/
+  --body-teen-background-gradient-1-stop: 0%;
+  --body-teen-background-gradient-2: #FBC8D4;
+  /*--body-teen-background-gradient-2: #222222;*/ /*Use this when debuging*/
+  --body-teen-background-gradient-2-stop: 88.5%;
+
+  --main-font: "Poppins", sans-serif;
+  --main-font-weight: 400;
+  --main-font-style: normal;
+
+  --heading-font: "Pacifico", cursive;
+  --heading-weight: 400;
+  --heading-font-style: normal;
+
+  --main-container-everlasting-fallback: #FDFCFB;
+  --main-container-everlasting-deg: 119.06deg;
+  --main-container-everlasting-grdient-1: #FDFCFB;
+  /*--main-container-everlasting-grdient-1: #515151;*/ /*Use this when debuging*/
+  --main-container-everlasting-grdient-1-stop: 0%;
+  --main-container-everlasting-grdient-2: #E2D1C3; 
+  /*--main-container-everlasting-grdient-2: #515151;*/ /*Use this when debuging*/
+  --main-container-everlasting-grdient-2-stop: 100%;
+  
+  --main-container-box-shadow: 8px 12px 2px rgba(0, 0, 0, 0.25);
+  --main-container-mobile-box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.25);
+  --main-container-inset: 0px 4px 4px #FFB2A8;
+  --main-container-border-radius: 200px 40px 40px 40px;
+  --main-container-mobile-border-radius: 80px 20px 20px 20px;
+
+  --header-color: #000000;
+  --question-color: #000000;
+
+  --next-btn-background: #D8D5EA;
+  --next-btn-shadow: #BEB9DA;
+
+  --message-incorrect-color: #D64F41;
+  --message-correct-color: #287E1C;
+
+  --answer-container-shadow: #D8D5EA;
+  --answer-container-border-radius: 20px;
+  --ans-a-background: #A2D2FF;
+  --ans-b-background: #FFC8DD;
+  --ans-c-background: #FFB2A8;
+  --ans-d-background: #CDB4DB;
+
+  --answer-text-font-weight: 600;
+  --answer-text-font-size: 22px;
+  --answer-text-line-height: 33px;
+  --answer-text-color: #252525;
+
+  --pagination-background: #D9D9D9;
+  --pagination-active: #BEB9DA;
+}
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--body-teen-background-fallback, #FBC8D4);
+  background: linear-gradient(
+    var(--body-teen-background-deg, 360deg),
+    var(--body-teen-background-gradient-1, #9795F0) var(--body-teen-background-gradient-1-stop, 0%),
+    var(--body-teen-background-gradient-2, #FBC8D4) var(--body-teen-background-gradient-2-stop, 88.5%) 
+  );
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-family: var(--main-font, "Poppins", sans-serif);
+  font-weight: var(--main-font-weight, 400);
+  font-style: var(--main-font-style, normal);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*min-height: 100vh;
+  height: calc(var(--vh) * 100); /* 100 times the custom property to cover full viewport height */
+
+  min-height: 100%;
+  height: auto;
+}
+
+#main-container {
+  background: var(--main-container-everlasting-fallback, #FDFCFB);
+  background: linear-gradient(
+    var(--main-container-everlasting-deg, 119.06deg), 
+    var(--main-container-everlasting-grdient-1, #FDFCFB) var(--main-container-everlasting-grdient-1-stop, 0%), 
+    var(--main-container-everlasting-grdient-2, #E2D1C3) var(--main-container-everlasting-grdient-2-stop, 100%)
+  );
+}
+
+#header {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+
+  color: var(--header-color, #000000);
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  flex: none;
+  flex-grow: 0;
+
+}
+
+#question {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  color: var(--question-color, #000000);
+  text-align: center;
+  flex: none;
+}
+
+#message {
+  font-family: 'Poppins';
+  font-style: italic;
+  text-align: center;
+  flex: none;
+  flex-grow: 0;
+}
+
+#message.incorrect {
+  color: var(--message-incorrect-color, #D64F41);
+}
+
+#message.correct {
+  color: var(--message-correct-color, #287E1C);
+}
+
+#section-next-btn,
+#section-reload {
+  flex: none;
+  flex-grow: 0;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#section-next-btn #next-btn,
+#section-reload #reload-btn{
+  background: var(--next-btn-background, #D8D5EA);
+  box-shadow: 0px 6px 0px var(--next-btn-shadow, #BEB9DA);
+  border-radius: 20px;
+
+  width: 313px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-family: 'Poppins';
+  font-style: italic;
+
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#section-reload {
+  margin: auto;
+}
+
+#section-reload.hide {
+  display: none;
+}
+
+#section-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  flex: none;
+  flex-grow: 0;
+}
+
+.pagination {
+  width: 14px;
+  height: 14px;
+  background: var(--pagination-background, #D9D9D9);
+  border-radius: 50%;
+}
+
+.pagination.active {
+  background: var(--pagination-active, #BEB9DA);
+}
+
+#section-answers .answer-container {
+  box-shadow: 0px 6px 0px var(--answer-container-shadow, #D8D5EA);
+  border-radius: var(--answer-container-border-radius, 20px);
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.answer-container .answer-alphabet {
+  cursor: pointer;
+}
+
+.answer-container.ans-a {
+  background: var(--ans-a-background, #A2D2FF);
+}
+
+.answer-container.ans-b {
+  background: var(--ans-b-background, #FFC8DD);
+}
+
+.answer-container.ans-c {
+  background: var(--ans-c-background, #FFB2A8);
+}
+
+.answer-container.ans-d {
+  background: var(--ans-d-background, #CDB4DB);
+}
+
+.answer-container .answer-text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: var(--answer-text-font-weight, 600);
+  font-size: var(--answer-text-font-size, 22px);
+  line-height: var(--answer-text-line-height, 33px);
+  color: var(--answer-text-color, #252525);
+  cursor: pointer;
+}
+
+.answer-container:not(.disabled):hover,
+#section-next-btn:not(.disabled):hover,
+#section-reload:hover {
+  transform: scale(1.05);
+}
+
+#section-next-btn.next-btn {
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
