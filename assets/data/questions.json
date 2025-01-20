@@ -21,7 +21,7 @@
   },
   {
     "question": "The city is so ugly when it is filled with so much ___________.", 
-    "answers": ["slush", "slushes", "trash", "trashes"], 
+    "answers": ["slush", "slushes"], 
     "correctAnswer": "slush" 
   }
 ]
